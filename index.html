@@ -1,0 +1,325 @@
+<!--
+	Changes made in this file: Integrated bootstrap
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	
+	<title>Khadem Avinoor Alam</title>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css\styles.css">
+</head>
+<!--the Scrollspy highlights cuurent nav position on nav bar while scrolling-->
+<body class="not-my-body" data-spy="scroll" data-target=".navbar-fixed-top">
+	<div id="carousel-container" class="container-fluid">
+		<div id="theCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+	   	 	<li data-target="#theCarousel" data-slide-to="1"></li>
+	   	 	<li data-target="#theCarousel" data-slide-to="2"></li>
+	  	</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<span class="sr-only">Hello World</span>
+					<img src="img\carousel-00.png" alt="Hello World">
+				</div>
+				<div class="item">
+					<span class="sr-only">Do not do dostackback</span>
+					<img src="img\carousel-01.png" alt="do-stack-back">
+				</div>
+				<div class="item">
+					<span class="sr-only">Matrix Coding</span>
+					<img src="img\carousel-02.png" alt="Matrix">
+				</div>
+			</div>
+			<a class="left carousel-control" href="#theCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#theCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	<div class="the-navbar">
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+	    <div class="navbar-header page-scroll">
+	    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	    		<span class="sr-only">Toggle navigation</span>
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    	</button>
+	    	<ul id="navbar-theme-option" class="nav navbar-nav navbar-left">
+	    		<li><a class="page-scroll" href="#">Light</a></li>
+	    		<li><a class="page-scroll" href="#">Night</a></li>
+	    	</ul>
+	    	<a class="navbar-brand page-scroll" href="#carousel-container">
+	    		<span class="light title">Khadem Avinoor Alam</span>
+	    	</a>
+	    </div>
+	    <div id="navbar" class="collapse navbar-collapse">
+	    	<ul class="nav navbar-nav navbar-right">
+	    		<li>
+	    			<a class="page-scroll" href="#about">About</a>
+	    		</li>
+	    		<li>
+	    			<a class="page-scroll" href="#skills">Skills</a>
+	    		</li>
+	    		<li>
+	    			<a class="page-scroll" href="#experience">Experience</a>
+	    		</li>
+	    		<li>
+	    			<a class="page-scroll" href="#links">Links</a>
+	    		</li>
+	    	</ul>
+	    </div>
+	  </nav>
+	</div>
+
+	<div id="about" class="container-fluid">
+		<div class="page-header text-center">
+			<span><b>Khadem Avinoor Alam</b></span><br>
+			(Little intro and social and linked in links here)
+		</div>
+	</div>
+
+	<div id="skills" class="container-fluid">
+		<h2>Skills</h2>
+		<ul> <!--erease after experiment-->
+			<li> <!--erase after experiment-->
+				<figure class="primary-figure-top">
+					<figcaption class="legend">
+						<p class="sr-only">Prinmary Language fluencies: Java (9), HTML (7), Python (3), JavaScript (6), SQL (5), JavaSwing (6), C (8)</p>
+						<ul class="legend-key-list" aria-hidden="true" role="presentation">
+							<li>
+								<span class="shape-square item-java"></span>Java
+							</li>
+							<li>
+								<span class="shape-square item-html"></span>HTML
+							</li>
+							<li>
+								<span class="shape-square item-python"></span>Python
+							</li>
+							<li>
+								<span class="shape-square item-javascript"></span>JavaScript
+							</li>
+							<li>
+								<span class="shape-square item-sql"></span>SQL
+							</li>
+							<li>
+								<span class="shape-square item-javaswing"></span>JavaSwing
+							</li>
+							<li>
+								<span class="shape-square item-c"></span>C
+							</li>
+						</ul>
+					</figcaption>
+					<div class="figure-content">
+						<svg class="donut" viewBox="0 0 42 42">
+				  		<circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#FFF"></circle>
+				  		<circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#D2D3D4" stroke-width="3"></circle>
+				  		<!--Current segment offset = (Circumference - Sum of Preceding segments) + first segment's offset -->
+				  		<!--Java first segment offset-->
+				  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#CE4B99" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="34"></circle>
+				  		<!--HTML-->
+				  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#B1C94E" stroke-width="3" stroke-dasharray="16 84" stroke-dashoffset="114"></circle>
+				  		<!--Python-->
+				  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#377BBC" stroke-width="3" stroke-dasharray="7 93" stroke-dashoffset="98"></circle>
+				  		<!--JavaScript-->
+				  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#FFB300" stroke-width="3" stroke-dasharray="14 86" stroke-dashoffset="91"></circle>
+				  		<!--SQLL-->
+				  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#64FFDA" stroke-width="3" stroke-dasharray="11 89" stroke-dashoffset="77"></circle>
+				  		<!--JavaSwing-->
+				  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#40C4FF" stroke-width="3" stroke-dasharray="14 86" stroke-dashoffset="66"></circle>
+				  		<!--C-->
+				  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#5C6BC0" stroke-width="3" stroke-dasharray="18 82" stroke-dashoffset="52"></circle>
+				  		<!--Text in the hole-->
+				  		<g class="chart-text">
+				    		<text class="chart-head" x="50%" y="50%">Primary</text>
+				    		<text class="chart-label" x="50%" y="50%">Languages</text>
+				  		</g>
+						</svg>
+					</div>
+				</figure>
+			</li>
+			<!--An experiment begins here-->
+			<li class="inner-list">
+				<ul>
+					<li>
+						<figure class="secondary-figure-bottom-left">
+							<div class="figure-content">
+								<svg class="donut" viewBox="0 0 42 42">
+						  		<circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#FFF"></circle>
+						  		<circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#D2D3D4" stroke-width="3"></circle>
+						  		<!--Current segment offset = (Circumference - Sum of Preceding segments) + first segment's offset -->
+						  		<!--CSS first segment offset-->
+						  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#D81B60" stroke-width="3" stroke-dasharray="35 65" stroke-dashoffset="34"></circle>
+						  		<!--PHP-->
+						  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#3949AB" stroke-width="3" stroke-dasharray="15 85" stroke-dashoffset="99"></circle>
+						  		<!--XML-->
+						  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#8E24AA" stroke-width="3" stroke-dasharray="25 75" stroke-dashoffset="84"></circle>
+						  		<!--Django-->
+						  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#1E88E5" stroke-width="3" stroke-dasharray="10 90" stroke-dashoffset="59"></circle>
+						  		<!--Macro-->
+						  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#5E35B1" stroke-width="3" stroke-dasharray="5 95" stroke-dashoffset="49"></circle>
+						  		<!--Ruby on Rails-->
+						  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#7CB342" stroke-width="3" stroke-dasharray="10 90" stroke-dashoffset="44"></circle>
+						  		<!--Text in the hole-->
+						  		<g class="chart-text">
+						    		<text class="chart-head" x="50%" y="50%">Secondary</text>
+						    		<text class="chart-label" x="50%" y="50%">Languages</text>
+						  		</g>
+								</svg>
+							</div>
+							<figcaption class="legend">
+								<p class="sr-only">Secondary Language fluencies: CSS (7), PHP (3), XML (5), Django (2), Macro (1), Ruby on Rails (2)</p>
+								<ul class="legend-key-list" aria-hidden="true" role="presentation">
+									<li>
+										<span class="shape-square item-css"></span>CSS
+									</li>
+									<li>
+										<span class="shape-square item-php"></span>PHP
+									</li>
+									<li>
+										<span class="shape-square item-xml"></span>XML
+									</li>
+									<li>
+										<span class="shape-square item-django"></span>Django
+									</li>
+									<li>
+										<span class="shape-square item-macro"></span>Macro
+									</li>
+									<li>
+										<span class="shape-square item-ruby"></span>Ruby on Rails
+									</li>
+								</ul>
+							</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure class="secondary-figure-bottom-right">
+							<div class="figure-content">
+								<svg class="donut" viewBox="0 0 42 42">
+						  		<circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#FFF"></circle>
+						  		<circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#D2D3D4" stroke-width="3"></circle>
+						  		<!--Current segment offset = (Circumference - Sum of Preceding segments) + first segment's offset -->
+						  		<!--jEdit first segment offset-->
+						  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#E57373" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="34"></circle>
+						  		<!--gEdit-->
+						  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#4DD0E1" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="114"></circle>
+						  		<!--Eiffel Studio-->
+						  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#4DB6AC" stroke-width="3" stroke-dasharray="14 86" stroke-dashoffset="94"></circle>
+						  		<!--Android Studio-->
+						  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#FFF176" stroke-width="3" stroke-dasharray="7 93" stroke-dashoffset="80"></circle>
+						  		<!--Eclipse-->
+						  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#DCE775" stroke-width="3" stroke-dasharray="9 91" stroke-dashoffset="73"></circle>
+						  		<!--Sublime-->
+						  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#FF8A65" stroke-width="3" stroke-dasharray="17 83" stroke-dashoffset="64"></circle>
+						  		<!--Nopepad++-->
+						  		<circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#90A4AE" stroke-width="3" stroke-dasharray="13 87" stroke-dashoffset="47"></circle>
+						  		<!--Text in the hole-->
+						  		<g class="chart-text">
+						    		<text class="chart-head" x="50%" y="50%">Editor</text>
+						    		<text class="chart-label" x="50%" y="50%">Fluencies</text>
+						  		</g>
+								</svg>
+							</div>
+							<figcaption class="legend">
+								<p class="sr-only">Editor fluencies: jEdit (9), gEdit (9), Eiffel Studio (6), Android Studio (3), Eclipse (4), Sublime (8), Notepad++ (6)</p>
+								<ul class="legend-key-list" aria-hidden="true" role="presentation">
+									<li>
+										<span class="shape-square item-jedit"></span>jEdit
+									</li>
+									<li>
+										<span class="shape-square item-gedit"></span>gEdit
+									</li>
+									<li>
+										<span class="shape-square item-eiffels"></span>Eiffel Studio
+									</li>
+									<li>
+										<span class="shape-square item-androids"></span>Android Studio
+									</li>
+									<li>
+										<span class="shape-square item-eclipse"></span>Eclipse
+									</li>
+									<li>
+										<span class="shape-square item-sublime"></span>Sublime
+									</li>
+									<li>
+										<span class="shape-square item-notepadpp"></span>Notepad++
+									</li>
+								</ul>
+							</figcaption>
+						</figure>
+					</li>
+			</ul>
+			</li>
+		</ul>
+		<!--Experiment ends here-->
+	</div>
+
+	<div id="experience" class="container-fluid">
+			<h2 href="#projectList" data-toggle="collapse">Revelant Projects</h2>
+			<div id="projectList" class="collapse in">
+				<div id="rP1">
+					<div id="rPtitl1"><b>3D Computer Graphics</b><br>York University, Canada</div>
+					<div id="rPYear1">September 2016 - December 2016</div>
+					<div id="rPDesc1">
+						<ul>
+							<li>3D object modelling and transformations using HTML5, JavaScript and C.</li>
+							<li>High definition image generated using C with algorithms for ray tracing, multiple light sources, lighting and shading, shadows, reflection, refraction (and total internal reflection), textures, anti-aliasing, etc.</li>
+						</ul>
+					</div>
+				</div>
+				<div id="breakin"><br></div>
+				<div id="rP2">
+					<div id="rPtitl2"><b>Front and Back-End Programmer</b><br>Parking Ticket Interface (Java Based), York University, Canada</div>
+					<div id="rPYear2">September 2015 - October 2015</div>
+					<div id="rPDesc2">
+						<ul>
+							<li>Coded the front-end interface for Data Entry.</li>
+							<li>Coded retrieval, checking and processed data from the database to the data entered by the user.</li>
+						</ul>
+					</div>
+				</div>
+				<div id="breakin"><br></div>
+				<div id="rP3">
+					<div id="rPtitl3"><b>Front and Back-End Programmer</b><br>Paint (Java Based), York University, York University, Canada</div>
+					<div id="rPYear3">November 2015 - December 2015</div>
+					<div id="rPDesc3">
+						<ul>
+							<li>Coded the front end interface and its functions consisting of a basic paint program: drop-down menus, shortcuts to menu keys, paint, tool and drawing panel.</li>
+							<li>Coded the back-end of the drawing panel. Was responsible for the coding for the functions: line, rectangle, square, oval, circle, text inserter, transparent, and opaque.</li>
+							<li>Assisted in the algorithm for the undo and redo function.</li>
+							<li>Coded the function of the following menu items: new, open, save, save as, close, exit, cut, copy, paste and about/help.</li>
+						</ul>
+					</div>
+				</div>
+				<div id="breakin"><br></div>
+				<div id="rP4">
+					<div id="rPtitl4"><b>Back-End Programmer</b><br>Text Based Game (Eiffel Studio based), York University, Canada</div>
+					<div id="rPYear4">September 2015 - December 2015</div>
+					<div id="rPDesc4">
+						<ul>
+							<li>Coded the interaction and effects between each unique characters.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</div>
+
+
+	<script type='text/javascript' src='hideShow.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
