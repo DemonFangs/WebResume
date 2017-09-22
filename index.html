@@ -3,7 +3,7 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head id="head">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
@@ -308,11 +308,10 @@
 					</div>
 				</li>
 			</ul>
-			<script src="timeline-js.js"></script>
 		</div>
 
 
-			
+		<!--
 			<div id="projectList" class="collapse in">
 				<div id="rP1">
 					<div id="rPtitl1"></div>
@@ -357,32 +356,11 @@
 				</div>
 			</div>
 	</div>
+-->
 
-
-	<script type="text/javascript">
-		function changeCSS(cssFile, cssLinkIndex) {
-
-	    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
-
-	    var newlink = document.createElement("link");
-	    newlink.setAttribute("rel", "stylesheet");
-	    newlink.setAttribute("type", "text/css");
-	    newlink.setAttribute("href", cssFile);
-
-	    document.getElementsByTagName("link").item(2).replaceChild(newlink, oldlink);
-		}
-
-		$('light').on('click', function() {
-			changeCSS('css\x22light.css', 2);
-			}
-		);
-		$('night').on('click', function() {
-			changeCSS('css\x22night.css', 2);
-			}
-		);
-	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/theme.js"></script>
 	
 </body>
 </html>
