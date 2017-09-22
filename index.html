@@ -12,6 +12,9 @@
 
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css\styles.css">
+	<link rel="stylesheet" type="text/css" href="css\light.css">
+	<!--link rel="stylesheet alternate" href="night.css" id="night-styles" title="Night"-->
+	
 </head>
 <!--the Scrollspy highlights cuurent nav position on nav bar while scrolling-->
 <body class="not-my-body" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -25,15 +28,18 @@
 			<div class="carousel-inner">
 				<div class="item active">
 					<span class="sr-only">Hello World</span>
-					<img src="img\carousel-00.png" alt="Hello World">
+					<span id="cars0">something</span>
+					<!--img src="img\carousel-00.png" alt="Hello World"-->
 				</div>
 				<div class="item">
 					<span class="sr-only">Do not do dostackback</span>
-					<img src="img\carousel-01.png" alt="do-stack-back">
+					<span id="cars1"></span>
+					<!--img src="img\carousel-01.png" alt="do-stack-back"-->
 				</div>
 				<div class="item">
 					<span class="sr-only">Matrix Coding</span>
-					<img src="img\carousel-02.png" alt="Matrix">
+					<span id="cars2"></span>
+					<!--img src="img\carousel-02.png" alt="Matrix"-->
 				</div>
 			</div>
 			<a class="left carousel-control" href="#theCarousel" data-slide="prev">
@@ -59,8 +65,8 @@
 	    		<span class="icon-bar"></span>
 	    	</button>
 	    	<ul id="navbar-theme-option" class="nav navbar-nav navbar-left">
-	    		<li><a class="page-scroll" href="#">Light</a></li>
-	    		<li><a class="page-scroll" href="#">Night</a></li>
+	    		<li><a class="page-scroll" id="light" href="#">Light</a></li>
+	    		<li><a class="page-scroll" id="night" href="#">Night</a></li>
 	    	</ul>
 	    	<a class="navbar-brand page-scroll" href="#carousel-container">
 	    		<span class="light title">Khadem Avinoor Alam</span>
@@ -268,16 +274,51 @@
 	</div>
 
 	<div id="experience" class="container-fluid">
-			<h2 href="#projectList" data-toggle="collapse">Revelant Projects</h2>
+		<h2>Revelant Projects</h2>
+		<div class="box">
+			<ul id="first-list">
+				<li>
+					<span></span>
+					<div class="title"><b>3D Computer Graphics</b></div>
+					<div class="info">In a team of two I was responsible for 3D object modelling and transformations using HTML5, JavaScript and C. I learned how to generate High definition image using C with algorithms for ray tracing, multiple light sources, lighting and shading, shadows, reflection, refraction (and total internal reflection), textures, anti-aliasing, etc.</div>
+					<div class="name">York University, Canada</div>
+					<div class="time">
+						<span>September 2016<sup>th</sup></span>
+						<span>December 2016</span>
+					</div>
+				</li>
+				<li>
+					<span></span>
+					<div class="title">summery #01</div>
+					<div class="info">the best animation , the best toturials you would ever see here only . you can learn how to animate and how to use SVG . even else you can add your own animations .</div>
+					<div class="name">- eng. amr -</div>
+					<div class="time">
+						<span>JUN, 29<sup>th</sup></span>
+						<span>11:36 AM</span>
+					</div>
+				</li>
+				<li>
+					<span></span>
+					<div class="title">comment #02</div>
+					<div class="info">the best animation , the best toturials you would ever see . what about canvas ?? do you like it ..</div>
+					<div class="name">- dr. ahmed -</div>
+					<div class="time">
+						<span>FEB, 2<sup>nd</sup></span>
+						<span>02:00 PM</span>
+					</div>
+				</li>
+			</ul>
+			<script src="timeline-js.js"></script>
+		</div>
+
+
+			
 			<div id="projectList" class="collapse in">
 				<div id="rP1">
-					<div id="rPtitl1"><b>3D Computer Graphics</b><br>York University, Canada</div>
-					<div id="rPYear1">September 2016 - December 2016</div>
+					<div id="rPtitl1"></div>
+					<div id="rPYear1"> - </div>
 					<div id="rPDesc1">
-						<ul>
-							<li>3D object modelling and transformations using HTML5, JavaScript and C.</li>
-							<li>High definition image generated using C with algorithms for ray tracing, multiple light sources, lighting and shading, shadows, reflection, refraction (and total internal reflection), textures, anti-aliasing, etc.</li>
-						</ul>
+						
 					</div>
 				</div>
 				<div id="breakin"><br></div>
@@ -318,8 +359,30 @@
 	</div>
 
 
-	<script type='text/javascript' src='hideShow.js'></script>
+	<script type="text/javascript">
+		function changeCSS(cssFile, cssLinkIndex) {
+
+	    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+	    var newlink = document.createElement("link");
+	    newlink.setAttribute("rel", "stylesheet");
+	    newlink.setAttribute("type", "text/css");
+	    newlink.setAttribute("href", cssFile);
+
+	    document.getElementsByTagName("link").item(2).replaceChild(newlink, oldlink);
+		}
+
+		$('light').on('click', function() {
+			changeCSS('css\x22light.css', 2);
+			}
+		);
+		$('night').on('click', function() {
+			changeCSS('css\x22night.css', 2);
+			}
+		);
+	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 </body>
 </html>

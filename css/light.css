@@ -1,0 +1,161 @@
+body{
+	background-color: #E6E9ED;
+}
+
+ul{
+	color: #656D78;
+}
+/*---- Navbar css ------------------------------------------*/
+/*To reset nav-bar offset when scrolling*/
+.navbar{
+	background-color: #656D78;
+}
+.navbar-custom {
+	border-bottom-color: #434A54;
+	background-color: #000;
+}
+
+/*---- Carousel css ----------------------------------------*/
+#cars0 {
+	background-image: url(img/carousel-00.png);
+}
+#cars1 {
+	background-image: url(img/carousel-01.png);
+}
+#cars2 {
+	background-image: url(img/carousel-02.png);
+}
+
+/*---- About css -------------------------------------------*/
+#about {
+	background-color: #E6E9ED;
+}
+
+/*---- Skills css ------------------------------------------*/
+#skills {
+	background-color: #F5F7FA;
+}
+/*svg elements*/
+.chart-text {
+	fill: #000;
+}
+
+/*figure elements*/
+/*top figure*/
+.item-java {
+	background-color: #CE4B99;
+}
+.item-html {
+	background-color: #B1C94E;
+}
+.item-python {
+	background-color: #377BBC;
+}
+.item-javascript {
+	background-color: #FFB300;
+}
+.item-sql {
+	background-color: #64FFDA;
+}
+.item-javaswing {
+	background-color: #40C4FF;
+}
+.item-c {
+	background-color: #5C6BC0;
+}
+
+/*bottom-left figure*/
+.item-css {
+	background-color: #D81B60;
+}
+.item-php {
+	background-color: #3949AB;
+}
+.item-xml {
+	background-color: #8E24AA;
+}
+.item-django {
+	background-color: #1E88E5;
+}
+.item-macro {
+	background-color: #5E35B1;
+}
+.item-ruby {
+	background-color: #7CB342;
+}
+
+/*bottom-right figure*/
+.item-jedit {
+	background-color: #E57373;
+}
+.item-gedit {
+	background-color: #4DD0E1;
+}
+.item-eiffels {
+	background-color: #4DB6AC;
+}
+.item-androids {
+	background-color: #FFF176;
+}
+.item-eclipse {
+	background-color: #DCE775;
+}
+.item-sublime {
+	background-color: #FF8A65;
+}
+.item-notepadpp {
+	background-color: #90A4AE;
+}
+
+/* Adds borders for tabs 
+.tab-content {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 10px;
+}*/
+
+/*---- Experience css --------------------------------------*/
+#experience {
+	background-color: #E6E9ED;
+}
+
+/*Timeline*/
+/*The broken line before the ul*/
+.box ul:before {
+	border-color: #000;
+}
+
+/*The boxed fill and border*/
+.box ul li{
+	background:rgba(0, 0, 0, 0.1);
+  color:#000;
+}
+
+/*The solid line before the ul*/
+.box ul li > span{
+	border-color: #000;
+}
+
+/*The circular points before the ul
+.box ul li > span:before,.box ul li > span:after {
+  background:#000; /*what color to fill the points with
+  border-color: #000;
+}
+*/
+.box .time {
+	background:rgba(0, 0, 0, 0.1);
+  color:#000;
+}
+.box .time span{
+  color:#000;
+}
+
+.box .time span:first-child {
+	border-color: #434A54;
+	background-color: #E6E9ED;
+}
+.box .time span:last-child {
+	border-color: #434A54;
+	background-color: #E6E9ED;
+}
