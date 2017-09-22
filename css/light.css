@@ -1,9 +1,13 @@
 body{
-	background-color: #E6E9ED;
+	background-color: #F5F7FA;
 }
 
 ul{
 	color: #656D78;
+}
+.header {
+	border-top-color: #AAB2BD;
+	border-bottom-color: #AAB2BD;
 }
 /*---- Navbar css ------------------------------------------*/
 /*To reset nav-bar offset when scrolling*/
@@ -15,20 +19,15 @@ ul{
 	background-color: #000;
 }
 
-/*---- Carousel css ----------------------------------------*/
-#cars0 {
-	background-image: url(img/carousel-00.png);
-}
-#cars1 {
-	background-image: url(img/carousel-01.png);
-}
-#cars2 {
-	background-image: url(img/carousel-02.png);
+/*---- Intro Image css -------------------------------------*/
+#intro-image {
+	background-color: #000;
 }
 
 /*---- About css -------------------------------------------*/
 #about {
 	background-color: #E6E9ED;
+	color: #434A54;
 }
 
 /*---- Skills css ------------------------------------------*/
@@ -37,9 +36,11 @@ ul{
 }
 /*svg elements*/
 .chart-text {
-	fill: #000;
+	fill: #434A54;
 }
-
+.donut-ring {
+	fill: #F5F7FA;
+}
 /*figure elements*/
 /*top figure*/
 .item-java {
@@ -107,14 +108,6 @@ ul{
 	background-color: #90A4AE;
 }
 
-/* Adds borders for tabs 
-.tab-content {
-	border-left: 1px solid #ddd;
-	border-right: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
-	padding: 10px;
-}*/
-
 /*---- Experience css --------------------------------------*/
 #experience {
 	background-color: #E6E9ED;
@@ -158,4 +151,9 @@ ul{
 .box .time span:last-child {
 	border-color: #434A54;
 	background-color: #E6E9ED;
+}
+
+/*---- Linls css -------------------------------------------*/
+#links {
+	background-color: #F5F7FA;
 }

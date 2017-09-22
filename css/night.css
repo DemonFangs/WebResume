@@ -1,10 +1,15 @@
 body{
 	background-color: #656D78;
 }
-
 ul{
 	color: #F5F7FA;
 }
+.header {
+	color: #F5F7FA;
+	border-bottom-color: #CCD1D9;
+	border-top-color: #CCD1D9;
+}
+
 /*---- Navbar css ------------------------------------------*/
 /*To reset nav-bar offset when scrolling*/
 .navbar{
@@ -15,29 +20,28 @@ ul{
 	background-color: #000;
 }
 
-/*---- Carousel css ----------------------------------------*/
-#cars0 {
-	background-image: url(img/carousel-00.png);
-}
-#cars1 {
-	background-image: url(img/carousel-01.png);
-}
-#cars2 {
-	background-image: url(img/carousel-02.png);
+/*---- Intro Image css -------------------------------------*/
+#intro-image {
+	background-color: #000;
 }
 
 /*---- About css -------------------------------------------*/
 #about {
 	background-color: #434A54;
+	color: #E6E9ED;
 }
 
 /*---- Skills css ------------------------------------------*/
 #skills {
 	background-color: #656D78;
+	color: #F5F7FA;
 }
 /*svg elements*/
 .chart-text {
-	fill: #000;
+	fill: #F5F7FA;
+}
+.donut-ring {
+	fill: #656D78;
 }
 
 /*figure elements*/
@@ -118,6 +122,7 @@ ul{
 /*---- Experience css --------------------------------------*/
 #experience {
 	background-color: #434A54;
+	color: #F5F7FA;
 }
 
 /*Timeline*/
@@ -158,4 +163,10 @@ ul{
 .box .time span:last-child {
 	border-color: #E6E9ED;
 	background-color: #434A54;
+}
+
+/*---- Linls css -------------------------------------------*/
+#links {
+	background-color: #656D78;
+	color: #F5F7FA;
 }

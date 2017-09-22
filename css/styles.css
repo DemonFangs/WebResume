@@ -14,11 +14,24 @@ ul{
 	list-style-type: none;
 	padding: 0;
 }
-
+.header {
+	display: inline;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 3px solid;
+	border-bottom: 2px solid;
+}
+h2 {
+	padding-bottom: 15px;
+}
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
 .page-header{
 	padding-top: 20px;
 	padding-bottom: 20px;
-	font-size: 18px;
+	
 }
 /*---- Navbar css ------------------------------------------*/
 /*To reset nav-bar offset when scrolling*/
@@ -54,17 +67,10 @@ ul{
 	margin-bottom: 0;
 }
 
-/*---- Carousel css ----------------------------------------*/
-#carousel-container {
-	width: 960px;
-	height: 540px;
-}
-.carousel-item-next, .carousel-item-prev, .carousel-item.active {
-	display: block;
-}
-
 /*---- About css -------------------------------------------*/
-
+#about div {
+	font-size: 18px;
+}
 
 /*---- Skills css ------------------------------------------*/
 #skills {
@@ -182,16 +188,16 @@ figure {
 
 /*---- Experience css --------------------------------------*/
 #experience {
-	padding-left: 90px;
+	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
 /*Timeline*/
 .box{
-  margin:auto;
-  height: 630px;
-  padding: 10px 0 40px 60px;
+  height: auto;
+  padding-left: 45px; 
+  padding-bottom: 70px;
 }
 
 .box ul{
@@ -241,19 +247,6 @@ figure {
   left: -20px;
 }
 
-/*The circular points before the ul
-.box ul li > span:before,.box ul li > span:after {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background:#000; /*what color to fill the points with
-  border:2px solid #000;
-  position: absolute;
-  left:-5.5px;
-}
-*/
 .box ul li > span:before {
   top:-10px;
 }
@@ -265,22 +258,23 @@ figure {
 .box .title{
   font-weight: 700;
   margin-bottom: 5px;
+  text-align: left;
 }
 
-.box .info:first-letter {
-  text-transform: capitalize;
-  line-height: 1.7;
+.box .info {
+  text-align: left;
 }
 
 .box .name{
   margin-top: 10px;
   text-transform: capitalize;
-  font-style: italic;
   text-align: right;
   margin-right: 20px;
 }
 
 .box .time {
+	font-size: 18px;
+	padding: 2px;
   border-radius: 10px;
   line-height: 20px;
 }
@@ -295,9 +289,20 @@ figure {
 	border: 1px solid;
 	border-radius: 10%;
   top:-25px;
+  left: -90px;
+  padding: 3px;
 }
 .box .time span:last-child {
 	border: 1px solid;
 	border-radius: 10%;
-  top:100%;
+  top:95%;
+  left: -90px;
+  padding: 3px;
+}
+
+/*---- Linls css -------------------------------------------*/
+#links {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }

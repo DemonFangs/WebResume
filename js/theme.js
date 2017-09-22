@@ -7,14 +7,14 @@ function changeCSS(cssFile, cssLinkIndex) {
 	newlink.setAttribute("type", "text/css");
 	newlink.setAttribute("href", cssFile);
     
-	document.getElementsByTagName("link").item(2).replaceChild(newlink, oldlink);
+	document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
 }
     
 $('#light').click(function() {
-  	changeCSS('css\x22light.css', 2);
+  	changeCSS('css\\light.css', 2);
   }
 );
 $('#night').on('click', function() {
-    changeCSS('css\x22night.css', 2);
+    changeCSS('css\\night.css', 2);
   }
 );
