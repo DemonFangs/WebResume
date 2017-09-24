@@ -9,15 +9,39 @@ ul{
 	border-bottom-color: #CCD1D9;
 	border-top-color: #CCD1D9;
 }
-
 /*---- Navbar css ------------------------------------------*/
 /*To reset nav-bar offset when scrolling*/
+
 .navbar{
 	background-color: #656D78;
 }
-.navbar-custom {
-	border-bottom-color: #434A54;
-	background-color: #000;
+.navbar-default {
+	border-bottom-color: #AAB2BD;
+	background-color: #434A54;
+}
+.navbar-default .navbar-brand {
+	color: #000;
+	background-color: #AAB2BD;
+}
+.navbar-default .navbar-brand:hover {
+	color: #000;
+	background-color: #E6E9ED;
+}
+.navbar-default .navbar-nav li>a {
+	color: #E6E9ED;
+}
+.navbar-default .navbar-nav li>a:hover, .navbar-nav li>a:focus, .navbar-nav li.active, .navbar-default .navbar-nav>.active>a {
+	border-top-color: #E6E9ED;
+	color: #E6E9ED;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: #434A54;
+	color: #E6E9ED;
+}
+@media (max-width: 767px) {
+	.divider {
+		background-color: #AAB2BD;
+	}
 }
 
 /*---- Intro Image css -------------------------------------*/

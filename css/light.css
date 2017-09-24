@@ -1,24 +1,48 @@
 body{
 	background-color: #F5F7FA;
 }
-
 ul{
 	color: #656D78;
 }
 .header {
+	color: #656D78;
 	border-top-color: #AAB2BD;
 	border-bottom-color: #AAB2BD;
 }
 /*---- Navbar css ------------------------------------------*/
 /*To reset nav-bar offset when scrolling*/
-.navbar{
-	background-color: #656D78;
-}
-.navbar-custom {
-	border-bottom-color: #434A54;
-	background-color: #000;
-}
 
+.navbar{
+	background-color: #F5F7FA;
+}
+.navbar-default {
+	border-bottom-color: #E6E9ED;
+	background-color: #F5F7FA;
+}
+.navbar-default .navbar-brand {
+	color: #FFF;
+	background-color: #4FC1E9;
+}
+.navbar-default .navbar-brand:hover {
+	background-color: #4A89DC;
+	color: #FFF;
+}
+.navbar-default .navbar-nav li>a {
+	color: #4A89DC;
+}
+.navbar-default .navbar-nav li>a:hover, .navbar-nav li>a:focus, .navbar-nav li.active, .navbar-default .navbar-nav>.active>a {
+	border-top-color: #4A89DC;
+	color: #4A89DC;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: #F5F7FA;
+	color: #4A89DC;
+}
+@media (max-width: 767px) {
+	.divider {
+		background-color: #E6E9ED;
+	}
+}
 /*---- Intro Image css -------------------------------------*/
 #intro-image {
 	background-color: #000;

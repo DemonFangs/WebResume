@@ -31,40 +31,60 @@ img {
 .page-header{
 	padding-top: 20px;
 	padding-bottom: 20px;
-	
 }
-/*---- Navbar css ------------------------------------------*/
-/*To reset nav-bar offset when scrolling*/
 .not-my-body {
 	position: relative;
 }
+/*---- Navbar css ------------------------------------------*/
 .title {
 	vertical-align: middle;
 }
-.light {
-	font-weight: 400;
+.navbar {
+	border-bottom-color: #4FC1E9;
 }
-.navbar{
-	border: 1px solid transparent;
-}
-.navbar-custom {
-	margin-bottom: 0;
+.navbar-default {
 	border-bottom: 1px solid;
 	text-transform: uppercase;
 	font-family: Montserrat, Arial, sans-serif;
-	font-size: 20px;
+	/*transition: background .5s ease-in-out, padding .5s ease-in-out;*/
+	min-height: 53px;
 }
-
 .navbar-header {
 	float: left;
-	text-align: center;
-	width: wrap;
+	min-width: 225px;
 }
-.navbar-brand {
-	float:none;
+/*brand styling*/
+.navbar-default .navbar-brand {
+	float: none;
+	font-size: 15px;
+	color: #FFF;;
+	background-color: #4FC1E9;
+	border-radius: 10px;
 }
-.nav-tabs {
-	margin-bottom: 0;
+.navbar-default .navbar-collapse {
+	font-size: 14px;
+}
+/*navbar button styling*/
+.navbar-default .navbar-nav li>a {
+	margin-left: 0px;
+	font-style: bold;
+}
+.navbar-nav li>a:hover,.navbar-nav li>a:focus,.navbar-nav li.active {
+	border-top: 2px solid;
+}
+.navbar-default .navnar-toggle {
+	float: right;
+}
+
+@media (max-width: 767px) {
+	.navbar-header {
+		float: none;
+		width:auto;
+	}
+	.divider {
+		height: 1px;
+		overflow: hidden;
+	}
 }
 
 /*---- About css -------------------------------------------*/
@@ -75,7 +95,7 @@ img {
 /*---- Skills css ------------------------------------------*/
 #skills {
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 50px;
 	padding-bottom: 20px;
 }
 #skills li {
@@ -188,13 +208,15 @@ figure {
 
 /*---- Experience css --------------------------------------*/
 #experience {
+	margin: 0;
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 50px;
 	padding-bottom: 20px;
 }
 
 /*Timeline*/
 .box{
+	margin: 0;
   height: auto;
   padding-left: 45px; 
   padding-bottom: 70px;
@@ -221,7 +243,7 @@ figure {
   border:1px dashed;
   position: absolute;
   top:0;
-  left:530px;
+  left:30px;
 }
 
 /*The boxed fill and border*/
@@ -232,7 +254,7 @@ figure {
   border-radius: 10px;
   line-height: 20px;
   width: 35%;
-  left: 500px;
+  left: 0px;
 }
 
 /*The solid line before the ul*/
