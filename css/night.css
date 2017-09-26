@@ -30,7 +30,7 @@ ul{
 .navbar-default .navbar-nav li>a {
 	color: #E6E9ED;
 }
-.navbar-default .navbar-nav li>a:hover, .navbar-nav li>a:focus, .navbar-nav li.active, .navbar-default .navbar-nav>.active>a {
+.navbar-default .navbar-nav li>a:hover, .navbar-default .navbar-nav li>a:focus, .navbar-default .navbar-nav li.active, .navbar-default .navbar-nav>.active>a {
 	border-top-color: #E6E9ED;
 	color: #E6E9ED;
 }
@@ -38,7 +38,7 @@ ul{
 	background-color: #434A54;
 	color: #E6E9ED;
 }
-@media (max-width: 767px) {
+@media (max-width: 767px){
 	.divider {
 		background-color: #AAB2BD;
 	}

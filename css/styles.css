@@ -33,6 +33,7 @@ img {
 	padding-bottom: 20px;
 }
 .not-my-body {
+	min-width: 240px;
 	position: relative;
 }
 /*---- Navbar css ------------------------------------------*/
@@ -46,31 +47,28 @@ img {
 	border-bottom: 1px solid;
 	text-transform: uppercase;
 	font-family: Montserrat, Arial, sans-serif;
-	/*transition: background .5s ease-in-out, padding .5s ease-in-out;*/
-	min-height: 53px;
+	min-height: 58px;
+	min-width: 111px;
 }
 .navbar-header {
 	float: left;
-	min-width: 225px;
 }
 /*brand styling*/
 .navbar-default .navbar-brand {
-	float: none;
+	float: left;
 	font-size: 15px;
-	color: #FFF;;
-	background-color: #4FC1E9;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 .navbar-default .navbar-collapse {
 	font-size: 14px;
 }
 /*navbar button styling*/
 .navbar-default .navbar-nav li>a {
-	margin-left: 0px;
+	margin-left: 0;
 	font-style: bold;
 }
-.navbar-nav li>a:hover,.navbar-nav li>a:focus,.navbar-nav li.active {
-	border-top: 2px solid;
+.navbar-default .navbar-nav li>a:hover, .navbar-default .navbar-nav li>a:focus, .navbar-default .navbar-nav li.active {
+	border-top: 3px solid;
 }
 .navbar-default .navnar-toggle {
 	float: right;
@@ -84,6 +82,24 @@ img {
 	.divider {
 		height: 1px;
 		overflow: hidden;
+	}
+}
+
+@media (max-width: 300px) {
+	.navbar-default .navbar-brand {
+		padding: 8px; 
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 263px) {
+	
+	.navbar-default .navbar-brand .title {
+		display: none;
+	}
+	.navbar-default .navbar-brand:after {
+		content: "KAA";
+		font-size: 15px;
 	}
 }
 
@@ -114,8 +130,8 @@ img {
   width: 63%;
 }
 .secondary-figure-bottom-right .donut {
-	height: 45%;
-  width: 45%;
+	height: 46%;
+  width: 46%;
 }
 .chart-text {
 	font: 16px/1.4em "Montserrat", Arial, sans-serif;
@@ -158,8 +174,8 @@ figure {
 }
 @media (max-width: 768px) {
 	#others {
-        text-align: left;
-    }
+    text-align: left;
+  }
 }
 
 .figure-content, .legend {
@@ -170,7 +186,6 @@ figure {
 	align-self: left;
 }
 .figure-content svg {
-/*	height: auto;*/
 	position: relative;
 }
 
@@ -204,6 +219,47 @@ figure {
 	-webkit-border-radius: 25%;
 	-moz-border-radius: 25%;
 	border-radius: 25%;
+}
+@media (max-width: 767px) and (min-width: 301px) {
+	.primary-figure-top .donut {
+		max-width: 365px;
+		max-height: 365px;
+		height: 75%;
+	  width: 75%;
+	  min-width: 253px;
+	  min-height: 253px;
+	}
+	.secondary-figure-bottom-left .donut {
+		max-width: 316px;
+		max-height: 316px;
+		height: 60%;
+	  width: 60%;
+	  min-width: 253px;
+	  min-height: 253px;
+	}
+	.secondary-figure-bottom-right .donut {
+		max-width: 316px;
+		max-height: 316px;
+		height: 60%;
+	  width: 60%;
+	  min-width: 253px;
+	  min-height: 253px;
+	}
+}
+
+@media (max-width: 300px) {
+	.primary-figure-top .donut {
+		height: 100%;
+	  width: 100%;
+	}
+	.secondary-figure-bottom-left .donut {
+		height: 80%;
+	  width: 80%;
+	}
+	.secondary-figure-bottom-right .donut {
+		height: 80%;
+	  width: 80%;
+	}
 }
 
 /*---- Experience css --------------------------------------*/
@@ -242,18 +298,19 @@ figure {
   height: 100%;
   border:1px dashed;
   position: absolute;
-  top:0;
-  left:30px;
+  top: none;
+  left: 90px; /*=(margin-left - 30px)*/
 }
 
-/*The boxed fill and border*/
+/*The boxed fill, border, margin and padding*/
 .box ul li{
-  margin: 20px 60px 60px;
+  margin: 0px 20px 60px 120px; /*top right bottom left*/
   position: relative;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 20px;
   border-radius: 10px;
   line-height: 20px;
-  width: 35%;
+  width: 60%;
+  min-width: 130px;
   left: 0px;
 }
 
@@ -320,6 +377,26 @@ figure {
   top:95%;
   left: -90px;
   padding: 3px;
+}
+@media (max-width: 767px) and (min-width: 301px) {
+	/*The broken line before the ul*/
+	.box ul:before {
+		left: 30px;
+	}
+	/*The boxed fill, border, margin and padding*/
+	.box ul li{
+		margin-left: 60px
+	}
+}
+@media (max-width: 300px){
+	/*The broken line before the ul*/
+	.box ul:before {
+		left: 0px;
+	}
+	/*The boxed fill, border, margin and padding*/
+	.box ul li{
+		margin-left: 30px
+	}
 }
 
 /*---- Linls css -------------------------------------------*/
