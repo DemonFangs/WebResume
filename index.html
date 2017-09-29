@@ -15,9 +15,11 @@
 <!--the Scrollspy highlights cuurent nav position on nav bar while scrolling-->
 <body class="not-my-body" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-	<div id="intro-image" class="container-fluid page-header">
-		<img src="img\intro-image.jpg" class="center-block" alt="print &quot;Hello World&quot;">
-		<span class="sr-only">print "Hello World"</span>
+	<div id="intro-image" class="container-fluid">
+		<div class="page-header">
+	<!-- 	<img src="img\intro-image.jpg" class="center-block" alt="print &quot;Hello World&quot;"> -->
+			<span class="sr-only">print "Hello World"</span>
+		</div>
 	</div>
 
 	<div class="the-navbar container-fluid">
@@ -67,8 +69,8 @@
 
 	<div id="about" class="container-fluid">
 		<ul class="horizontal-list">
-			<li>
-				<div class="description">
+			<li class="description">
+				<div>
 					An interest in Computer Programming led me to do a degree in Computer Science. It took much longer than most, with ups and downs during these seven years. But with persistence and perseverance through repeated failures have finally graduated. Let this be an example how failure is not an obstacle but an opportunity to get stronger.
 				</div>
 			</li>
@@ -81,20 +83,30 @@
 					</li>
 					<li>
 						<ul class="mini-link-logos">
-							<li class="github-icon">
-								<a href="https://github.com/DemonFangs" target="_blank"></a>
+							<li>
+								<a href="https://github.com/DemonFangs" target="_blank">
+									<div class="github-icon"></div>
+								</a>
 							</li>
-							<li class="linkedin-icon">
-								<a href="https://www.linkedin.com/in/khadem-avinoor-alam" target="_blank"></a>
+							<li>
+								<a href="https://www.linkedin.com/in/khadem-avinoor-alam" target="_blank">
+									<div class="linkedin-icon"></div>
+								</a>
 							</li>
-							<li class="facebook-icon">
-								<a href="https://www.facebook.com/khademavinooralam" target="_blank"></a>
+							<li>
+								<a href="https://www.facebook.com/khademavinooralam" target="_blank">
+									<div class="facebook-icon"></div>
+								</a>
 							</li>
-							<li class="mail-icon">
-								<a href="#" target="_blank"></a>
+							<li>
+								<a href="#" target="_blank">
+									<div class="mail-icon"></div>
+								</a>
 							</li>
-							<li class="pdf-icon">
-								<a href="#" target="_blank"></a>
+							<li>
+								<a href="#" target="_blank">
+									<div class="pdf-icon"></div>
+								</a>
 							</li>
 						</ul>
 					</li>
@@ -105,8 +117,8 @@
 
 	<div id="skills" class="container-fluid">
 		<h2><span class="header">Skills</span></h2>
-		<ul> <!--erease after experiment-->
-			<li> <!--erase after experiment-->
+		<ul>
+			<li>
 				<figure class="primary-figure-top">
 					<figcaption class="legend">
 						<p class="sr-only">Prinmary Language fluencies: Java (9), HTML (7), Python (3), JavaScript (6), SQL (5), JavaSwing (6), C (8)</p>
@@ -275,7 +287,6 @@
 			</ul>
 			</li>
 		</ul>
-		<!--Experiment ends here-->
 	</div>
 
 	<div id="experience" class="container-fluid">

@@ -14,6 +14,9 @@ ul{
 	list-style-type: none;
 	padding: 0;
 }
+h2 {
+	padding-bottom: 15px;
+}
 .header {
 	display: inline;
 	padding-top: 10px;
@@ -21,23 +24,24 @@ ul{
 	border-top: 3px solid;
 	border-bottom: 2px solid;
 }
-h2 {
-	padding-bottom: 15px;
-}
 
-.page-header{
-	padding-top: 20px;
-	padding-bottom: 20px;
+/*---- Intro Image -----------------------------------------*/
+#intro-image{
+	padding: 0;
 }
-.page-header.container-fluid {
+#intro-image .page-header {
 	margin: 58px auto 0 auto;
+	width: 100%;
+	height: 429px;
 	padding: 0;
 	min-height: 100%;
+	background: url(../img/intro-image.jpg) no-repeat center;
 }
 .not-my-body {
 	min-width: 240px;
 	position: relative;
 }
+
 /*---- Navbar css ------------------------------------------*/
 .title {
 	vertical-align: middle;
@@ -84,21 +88,14 @@ h2 {
 		float: none;
 		width:auto;
 	}
-	/*.divider {
-		height: 1px;
-		overflow: hidden;
-	}*/
 }
-
 @media (max-width: 300px) {
 	.navbar-default .navbar-brand {
 		padding: 8px; 
 		font-size: 13px;
 	}
 }
-
 @media (max-width: 263px) {
-	
 	.navbar-default .navbar-brand .title {
 		display: none;
 	}
@@ -120,6 +117,11 @@ h2 {
 .horizontal-list li {
 	float: left;
 }
+.horizontal-list .description {
+	padding: 20px 20px;
+	width: 70%;
+	text-align: left;
+}
 .vertical-list li {
 	float: none;
 }
@@ -129,10 +131,12 @@ h2 {
 	height: 32px;
 	width: 32px;
 	margin: 5px;
-	padding: 0;
-	border: 0;
-	
 }
+.mini-link-logos li div {
+	width: 100%;
+	height: 100%;
+}
+
 /*---- Skills css ------------------------------------------*/
 #skills {
 	text-align: center;
@@ -192,17 +196,6 @@ figure {
 	margin-left: -15px;
 	margin-right: -15px;
 }
-@media (min-width: 768px) {
-	figure {
-		flex-direction: row;
-	}
-}
-@media (max-width: 768px) {
-	#others {
-    text-align: left;
-  }
-}
-
 .figure-content, .legend {
 	flex: 1;
 	padding-left: 15px;
@@ -213,7 +206,6 @@ figure {
 .figure-content svg {
 	position: relative;
 }
-
 .legend {
 	min-width: calc(4/12);
 }
@@ -245,6 +237,17 @@ figure {
 	-moz-border-radius: 25%;
 	border-radius: 25%;
 }
+
+@media (min-width: 768px) {
+	figure {
+		flex-direction: row;
+	}
+}
+@media (max-width: 768px) {
+	#others {
+    text-align: left;
+  }
+}
 @media (max-width: 767px) and (min-width: 301px) {
 	.primary-figure-top .donut {
 		max-width: 365px;
@@ -271,7 +274,6 @@ figure {
 	  min-height: 253px;
 	}
 }
-
 @media (max-width: 300px) {
 	.primary-figure-top .donut {
 		height: 100%;
@@ -294,7 +296,6 @@ figure {
 	padding-top: 50px;
 	padding-bottom: 20px;
 }
-
 /*Timeline*/
 .box{
 	margin: 0;
@@ -302,7 +303,6 @@ figure {
   padding-left: 45px; 
   padding-bottom: 70px;
 }
-
 .box ul{
   list-style-type: none;
   margin: 0;
@@ -310,11 +310,9 @@ figure {
   transition: all 0.5s linear;
   top:0;
 }
-
 .box ul:last-of-type {
   top:80px;
 }
-
 /*The broken line before the ul*/
 .box ul:before {
   content: "";
@@ -326,7 +324,6 @@ figure {
   top: none;
   left: calc(20% - 30px); /*=(margin-left - 30px)*/
 }
-
 /*The boxed fill, border, margin and padding*/
 .box ul li{
   margin: 0px 20px 60px 20%; /*top right bottom left*/
@@ -338,7 +335,6 @@ figure {
   min-width: 130px;
   left: 0px;
 }
-
 /*The solid line before the ul*/
 .box ul li > span{
   content: "";
@@ -350,39 +346,32 @@ figure {
   top:0;
   left: -20px;
 }
-
 .box ul li > span:before {
   top:-10px;
 }
-
 .box ul li > span:after {
   top:100%;
 }
-
 .box .title{
   font-weight: 700;
   margin-bottom: 5px;
   text-align: left;
 }
-
 .box .info {
   text-align: left;
 }
-
 .box .name{
   margin-top: 10px;
   text-transform: capitalize;
   text-align: right;
   margin-right: 20px;
 }
-
 .box .time {
 	font-size: 18px;
 	padding: 2px;
   border-radius: 10px;
   line-height: 20px;
 }
-
 .box .time span{
   position: absolute;
   left: -100px;
@@ -403,7 +392,6 @@ figure {
   left: -90px;
   padding: 3px;
 }
-
 
 /*---- Linls css -------------------------------------------*/
 #links {
