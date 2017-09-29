@@ -38,11 +38,11 @@ ul{
 	background-color: #434A54;
 	color: #E6E9ED;
 }
-@media (max-width: 767px){
+/*@media (max-width: 800px){
 	.divider {
 		background-color: #AAB2BD;
 	}
-}
+}*/
 
 /*---- Intro Image css -------------------------------------*/
 #intro-image {
@@ -54,7 +54,21 @@ ul{
 	background-color: #434A54;
 	color: #E6E9ED;
 }
-
+.mini-link-logos .github-icon {
+	background: url(../img/icons/github-night.png) no-repeat;
+}
+.mini-link-logos .linkedin-icon {
+	background: url(../img/icons/linkedin-night.png) no-repeat;
+}
+.mini-link-logos .facebook-icon {
+	background: url(../img/icons/facebook-night.png) no-repeat;
+}
+.mini-link-logos .mail-icon {
+	background: url(../img/icons/mail-night.png) no-repeat;
+}
+.mini-link-logos .pdf-icon {
+	background: url(../img/icons/pdf-night.png) no-repeat;
+}
 /*---- Skills css ------------------------------------------*/
 #skills {
 	background-color: #656D78;
