@@ -1,58 +1,63 @@
 body{
-	background-color: #656D78;
+	background-color: var(--primary-light-color);
 }
 ul{
-	color: #F5F7FA;
+	color: var(--secondary-light-color);
 }
 .header {
-	color: #F5F7FA;
+	color: var(--secondary-light-color);
 	border-bottom-color: #CCD1D9;
 	border-top-color: #CCD1D9;
 }
+:root {
+	--backup-color-black: var(--backup-color-black);
+	--backup-color-white: #FFF;
+	--primary-light-color: #656D78;
+	--primary-dark-color: #AAB2BD;
+	--secondary-light-color: #F5F7FA;
+	--secondary-dark-color: #E6E9ED;
+	--third-dark-color: #434A54;
+}
+
 /*---- Navbar css ------------------------------------------*/
 /*To reset nav-bar offset when scrolling*/
-
 .navbar{
-	background-color: #656D78;
+	background-color: var(--primary-light-color);
 }
 .navbar-default {
-	border-bottom-color: #AAB2BD;
-	background-color: #434A54;
+	border-top-color: var(--primary-dark-color);
+	border-bottom-color: var(--primary-dark-color);
+	background-color: var(--third-dark-color);
 }
 .navbar-default .navbar-brand {
-	color: #000;
-	background-color: #AAB2BD;
+	color: var(--backup-color-black);
+	background-color: var(--primary-dark-color);
 }
 .navbar-default .navbar-brand:hover {
-	color: #000;
-	background-color: #E6E9ED;
+	color: var(--backup-color-black);
+	background-color: var(--secondary-dark-color);
 }
 .navbar-default .navbar-nav li>a {
-	color: #E6E9ED;
+	color: var(--secondary-dark-color);
 }
 .navbar-default .navbar-nav li>a:hover, .navbar-default .navbar-nav li>a:focus, .navbar-default .navbar-nav li.active, .navbar-default .navbar-nav>.active>a {
-	border-top-color: #E6E9ED;
-	color: #E6E9ED;
+	border-top-color: var(--secondary-dark-color);
+	color: var(--secondary-dark-color);
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-	background-color: #434A54;
-	color: #E6E9ED;
+	background-color: var(--third-dark-color);
+	color: var(--secondary-dark-color);
 }
-/*@media (max-width: 800px){
-	.divider {
-		background-color: #AAB2BD;
-	}
-}*/
 
 /*---- Intro Image css -------------------------------------*/
 #intro-image {
-	background-color: #000;
+	background-color: var(--backup-color-black);
 }
 
 /*---- About css -------------------------------------------*/
 #about {
-	background-color: #434A54;
-	color: #E6E9ED;
+	background-color: var(--third-dark-color);
+	color: var(--secondary-dark-color);
 }
 .mini-link-logos .github-icon {
 	background: url(../img/icons/github-night.png) no-repeat;
@@ -71,15 +76,15 @@ ul{
 }
 /*---- Skills css ------------------------------------------*/
 #skills {
-	background-color: #656D78;
-	color: #F5F7FA;
+	background-color: var(--primary-light-color);
+	color: var(--secondary-light-color);
 }
 /*svg elements*/
 .chart-text {
-	fill: #F5F7FA;
+	fill: var(--secondary-light-color);
 }
 .donut-ring {
-	fill: #656D78;
+	fill: var(--primary-light-color);
 }
 
 /*figure elements*/
@@ -159,52 +164,52 @@ ul{
 
 /*---- Experience css --------------------------------------*/
 #experience {
-	background-color: #434A54;
-	color: #F5F7FA;
+	background-color: var(--third-dark-color);
+	color: var(--secondary-light-color);
 }
 
 /*Timeline*/
 /*The broken line before the ul*/
 .box ul:before {
-	border-color: #FFF;
+	border-color: var(--backup-color-white);
 }
 
 /*The boxed fill and border*/
 .box ul li{
 	background:rgba(0, 0, 0, 0.1);
-  color:#FFF;
+  color:var(--backup-color-white);
 }
 
 /*The solid line before the ul*/
 .box ul li > span{
-	border-color: #FFF;
+	border-color: var(--backup-color-white);
 }
 
 /*The circular points before the ul
 .box ul li > span:before,.box ul li > span:after {
-  background:#000; /*what color to fill the points with
-  border-color: #000;
+  background:var(--backup-color-black); /*what color to fill the points with
+  border-color: var(--backup-color-black);
 }
 */
 .box .time {
 	background:rgba(256, 256, 256, 0.1);
-  color:#FFF;
+  color:var(--backup-color-white);
 }
 .box .time span{
-  color:#FFF;
+  color:var(--backup-color-white);
 }
 
 .box .time span:first-child {
-	border-color: #E6E9ED;
-	background-color: #434A54;
+	border-color: var(--secondary-dark-color);
+	background-color: var(--third-dark-color);
 }
 .box .time span:last-child {
-	border-color: #E6E9ED;
-	background-color: #434A54;
+	border-color: var(--secondary-dark-color);
+	background-color: var(--third-dark-color);
 }
 
 /*---- Linls css -------------------------------------------*/
 #links {
-	background-color: #656D78;
-	color: #F5F7FA;
+	background-color: var(--primary-light-color);
+	color: var(--secondary-light-color);
 }

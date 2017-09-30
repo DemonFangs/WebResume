@@ -1,5 +1,5 @@
 body{
-	background-color: #F5F7FA;
+	background-color: var(--primary-light-color);
 }
 ul{
 	color: #656D78;
@@ -9,23 +9,32 @@ ul{
 	border-top-color: #AAB2BD;
 	border-bottom-color: #AAB2BD;
 }
+:root {
+	--backup-color-black: #000;
+	--backup-color-white: #FFF;
+	--primary-light-color: #F5F7FA;
+	--primary-dark-color: #E6E9ED;
+	--secondary-dark-color: #434A54;
+}
+
 /*---- Navbar css ------------------------------------------*/
 /*To reset nav-bar offset when scrolling*/
 
 .navbar{
-	background-color: #F5F7FA;
+	background-color: var(--primary-light-color);
 }
 .navbar-default {
-	border-bottom-color: #E6E9ED;
-	background-color: #F5F7FA;
+	border-top-color: var(--primary-dark-color);
+	border-bottom-color: var(--primary-dark-color);
+	background-color:var(--primary-light-color);
 }
 .navbar-default .navbar-brand {
-	color: #FFF;
+	color: var(--backup-color-white);
 	background-color: #4FC1E9;
 }
 .navbar-default .navbar-brand:hover {
 	background-color: #4A89DC;
-	color: #FFF;
+	color: var(--backup-color-white);
 }
 .navbar-default .navbar-nav li>a {
 	color: #4A89DC;
@@ -35,24 +44,24 @@ ul{
 	color: #4A89DC;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-	background-color: #F5F7FA;
+	background-color: var(--primary-light-color);
 	color: #4A89DC;
 }
 
 /*@media (max-width: 800px) {
 	.divider {
-		background-color: #E6E9ED;
+		background-color: var(--primary-dark-color);
 	}
 }*/
 /*---- Intro Image css -------------------------------------*/
 #intro-image {
-	background-color: #F5F7FA;
+	background-color: var(--primary-light-color);
 }
 
 /*---- About css -------------------------------------------*/
 #about {
-	background-color: #E6E9ED;
-	color: #434A54;
+	background-color: var(--primary-dark-color);
+	color: var(--secondary-dark-color);
 }
 
 .mini-link-logos .github-icon {
@@ -72,14 +81,14 @@ ul{
 }
 /*---- Skills css ------------------------------------------*/
 #skills {
-	background-color: #F5F7FA;
+	background-color: var(--primary-light-color);
 }
 /*svg elements*/
 .chart-text {
-	fill: #434A54;
+	fill: var(--secondary-dark-color);
 }
 .donut-ring {
-	fill: #F5F7FA;
+	fill: var(--primary-light-color);
 }
 /*figure elements*/
 /*top figure*/
@@ -150,50 +159,50 @@ ul{
 
 /*---- Experience css --------------------------------------*/
 #experience {
-	background-color: #E6E9ED;
+	background-color: var(--primary-dark-color);
 }
 
 /*Timeline*/
 /*The broken line before the ul*/
 .box ul:before {
-	border-color: #000;
+	border-color: var(--backup-color-black);
 }
 
 /*The boxed fill and border*/
 .box ul li{
 	background:rgba(0, 0, 0, 0.1);
-  color:#000;
+  color:var(--backup-color-black);
 }
 
 /*The solid line before the ul*/
 .box ul li > span{
-	border-color: #000;
+	border-color: var(--backup-color-black);
 }
 
 /*The circular points before the ul
 .box ul li > span:before,.box ul li > span:after {
-  background:#000; /*what color to fill the points with
-  border-color: #000;
+  background:var(--backup-color-black); /*what color to fill the points with
+  border-color: var(--backup-color-black);
 }
 */
 .box .time {
 	background:rgba(0, 0, 0, 0.1);
-  color:#000;
+  color:var(--backup-color-black);
 }
 .box .time span{
-  color:#000;
+  color:var(--backup-color-black);
 }
 
 .box .time span:first-child {
-	border-color: #434A54;
-	background-color: #E6E9ED;
+	border-color: var(--secondary-dark-color);
+	background-color: var(--primary-dark-color);
 }
 .box .time span:last-child {
-	border-color: #434A54;
-	background-color: #E6E9ED;
+	border-color: var(--secondary-dark-color);
+	background-color: var(--primary-dark-color);
 }
 
 /*---- Linls css -------------------------------------------*/
 #links {
-	background-color: #F5F7FA;
+	background-color: var(--primary-light-color);
 }
